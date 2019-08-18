@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{CXQP:function(n,o,i){"use strict";i.r(o),i.d(o,"ShoppingListModule",function(){return p});var p=function(){}}}]);
