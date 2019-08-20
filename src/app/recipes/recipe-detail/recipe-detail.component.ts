@@ -12,6 +12,7 @@ export class RecipeDetailComponent implements OnInit {
 
   recipe: Recipe;
   id: number;
+  private toggle: Boolean = false;
 
   constructor(private recipeService: RecipeService,
     private route: ActivatedRoute, private router: Router) { }
@@ -32,6 +33,11 @@ export class RecipeDetailComponent implements OnInit {
   onEditRecipe() {
     this.router.navigate(['edit'], {relativeTo: this.route});
   }
+
+  onManage() {
+    this.toggle = !this.toggle;
+  }
+
 
   onDeleteRecipe() {
     this.recipeService.deleteRecipe(this.id);
