@@ -12,7 +12,7 @@ export class RecipeDetailComponent implements OnInit {
 
   recipe: Recipe;
   id: number;
-  private toggle: Boolean = false;
+  public toggle: Boolean = false;
 
   constructor(private recipeService: RecipeService,
     private route: ActivatedRoute, private router: Router) { }
